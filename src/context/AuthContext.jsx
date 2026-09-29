@@ -16,7 +16,7 @@ export function AuthProvider({ children }) {
         const { data: { session } } = await supabase.auth.getSession()
         setSession(session)
         setUser(session?.user ?? null)
-        
+
         if (session?.user) {
           const { data } = await supabase
             .from('profiles')
@@ -31,7 +31,7 @@ export function AuthProvider({ children }) {
         setIsLoading(false)
       }
     }
-    
+
     initializeAuth()
 
     // Listen for changes on auth state (log in, log out, etc.)
@@ -39,7 +39,7 @@ export function AuthProvider({ children }) {
       async (event, currentSession) => {
         setSession(currentSession)
         setUser(currentSession?.user ?? null)
-        
+
         if (currentSession?.user) {
           const { data } = await supabase
             .from('profiles')
@@ -80,7 +80,7 @@ export function AuthProvider({ children }) {
       }
     })
     if (error) throw error
-    
+
     // The profiles table should have a trigger to auto-insert on user creation,
     // but if not, we would create it here.
     return data

@@ -19,9 +19,12 @@ export default function AdminLayout() {
     <div className="flex min-h-screen bg-[#FAF8FC]">
       {/* Sidebar */}
       <aside className="w-64 bg-white border-r border-purple-light flex-shrink-0 hidden md:block">
-        <div className="p-6 border-b border-purple-light">
-          <h2 className="text-xl font-serif text-purple-deep">Admin Panel</h2>
-          <p className="text-xs text-text-secondary mt-1">SHAMZIL ART CRAFTED</p>
+        <div className="p-6 border-b border-purple-light flex items-center space-x-3">
+          <img src="/logo.png" alt="Shamzil Art Crafted" className="h-10 w-10 object-contain rounded-full" />
+          <div>
+            <h2 className="text-xl font-serif text-purple-deep">Admin Panel</h2>
+            <p className="text-xs text-text-secondary mt-1">SHAMZIL ART CRAFTED</p>
+          </div>
         </div>
         <nav className="p-4 space-y-1">
           {navItems.map((item) => (

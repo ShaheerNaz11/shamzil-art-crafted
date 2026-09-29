@@ -1,4 +1,5 @@
 {
+  "name": "shamzil-art-crafted-app",
   "rewrites": [
     {
       "source": "/(.*)",

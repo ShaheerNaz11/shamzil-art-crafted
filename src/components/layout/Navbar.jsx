@@ -37,11 +37,10 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           
-          {/* Stacked Logo */}
-          <div className="flex-shrink-0 flex flex-col items-center justify-center">
-            <Link to="/" className="text-center font-serif flex flex-col">
-              <span className="text-2xl font-bold text-purple-primary tracking-widest leading-tight">SHAMZIL</span>
-              <span className="text-sm font-medium text-purple-deep tracking-[0.2em] leading-tight">ART CRAFTED</span>
+          {/* Logo */}
+          <div className="flex-shrink-0 flex items-center">
+            <Link to="/" className="flex items-center">
+              <img src="/logo.png" alt="Shamzil Art Crafted" className="h-16 w-auto object-contain rounded-full hover:scale-105 transition-transform duration-300" />
             </Link>
           </div>
 
