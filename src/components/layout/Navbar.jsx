@@ -39,8 +39,12 @@ export default function Navbar() {
           
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <Link to="/" className="flex items-center">
-              <img src="/logo.png" alt="Shamzil Art Crafted" className="h-16 w-auto object-contain rounded-full hover:scale-105 transition-transform duration-300" />
+            <Link to="/" className="flex items-center space-x-3">
+              <img src="/logo.png" alt="Shamzil Art Crafted Logo" className="h-14 w-auto object-contain rounded-full hover:scale-105 transition-transform duration-300" />
+              <div className="flex flex-col">
+                <span className="text-xl font-serif font-bold text-purple-deep tracking-widest leading-tight">SHAMZIL</span>
+                <span className="text-xs text-text-secondary tracking-[0.2em] uppercase">Art Crafted</span>
+              </div>
             </Link>
           </div>
 
