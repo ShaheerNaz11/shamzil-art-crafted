@@ -9,8 +9,9 @@ export default function Footer() {
           
           {/* Brand */}
           <div className="col-span-1 md:col-span-1">
-            <Link to="/" className="inline-block mb-4">
-              <img src="/logo.png" alt="Shamzil Art Crafted" className="h-16 w-auto object-contain rounded-full" />
+            <Link to="/" className="flex items-center space-x-3 mb-4">
+              <img src="/logo.png" alt="Shamzil Art Crafted" className="h-12 w-auto object-contain rounded-full bg-white/10 p-1" />
+              <h3 className="text-2xl font-serif tracking-widest text-white">SHAMZIL<br/>ART CRAFTED</h3>
             </Link>
             <p className="text-purple-lavender mb-6 italic">"Crafting Your Moments, Creating Your Memories."</p>
             <div className="flex space-x-4">
